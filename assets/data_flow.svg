@@ -1,7 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430">
-<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#52656D"/></marker></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">Multimodal Learning Analytics data and reasoning flow</title>
+<desc id="desc">Derived speech, gaze, and interaction features are grouped by learner and session, aligned into time windows, and fused with explicit missingness.</desc>
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L9,3 z" fill="#52656D"/>
+  </marker>
+</defs>
 <rect width="100%" height="100%" fill="#FAFBFA"/>
 <text x="60" y="64" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1B2430">Multimodal Learning Analytics · data and reasoning flow</text>
-<text x="60" y="98" font-family="Arial, sans-serif" font-size="17" fill="#5B6660">A compact view of the information path used by the prototype.</text>
-<rect x="95" y="145" width="200" height="110" rx="18" fill="#E8F1F3" stroke="#87949A" stroke-width="2"/><text x="195" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1B2430">01</text><text x="195" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#26343B">Audio / video / logs</text><line x1="300" y1="200" x2="350" y2="200" stroke="#52656D" stroke-width="3" marker-end="url(#arrow)"/><rect x="365" y="145" width="200" height="110" rx="18" fill="#EEF3E8" stroke="#87949A" stroke-width="2"/><text x="465" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1B2430">02</text><text x="465" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#26343B">Feature alignment</text><line x1="570" y1="200" x2="620" y2="200" stroke="#52656D" stroke-width="3" marker-end="url(#arrow)"/><rect x="635" y="145" width="200" height="110" rx="18" fill="#F5EDE4" stroke="#87949A" stroke-width="2"/><text x="735" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1B2430">03</text><text x="735" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#26343B">Multimodal fusion</text><line x1="840" y1="200" x2="890" y2="200" stroke="#52656D" stroke-width="3" marker-end="url(#arrow)"/><rect x="905" y="145" width="200" height="110" rx="18" fill="#ECE8F5" stroke="#87949A" stroke-width="2"/><text x="1005" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1B2430">04</text><text x="1005" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#26343B">Learning process view</text>
+<text x="60" y="98" font-family="Arial, sans-serif" font-size="17" fill="#5B6660">A transparent baseline for entity-safe temporal alignment and feature fusion.</text>
+
+<rect x="55" y="145" width="245" height="110" rx="18" fill="#E8F1F3" stroke="#87949A" stroke-width="2"/>
+<text x="177.5" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1B2430">01</text>
+<text x="177.5" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#26343B">Derived speech / gaze /</text>
+<text x="177.5" y="231" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#26343B">interaction features</text>
+
+<line x1="305" y1="200" x2="355" y2="200" stroke="#52656D" stroke-width="3" marker-end="url(#arrow)"/>
+
+<rect x="370" y="145" width="215" height="110" rx="18" fill="#EEF3E8" stroke="#87949A" stroke-width="2"/>
+<text x="477.5" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1B2430">02</text>
+<text x="477.5" y="209" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#26343B">Learner + session</text>
+<text x="477.5" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#26343B">separation</text>
+
+<line x1="590" y1="200" x2="640" y2="200" stroke="#52656D" stroke-width="3" marker-end="url(#arrow)"/>
+
+<rect x="655" y="145" width="200" height="110" rx="18" fill="#F5EDE4" stroke="#87949A" stroke-width="2"/>
+<text x="755" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1B2430">03</text>
+<text x="755" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#26343B">Time windows</text>
+
+<line x1="860" y1="200" x2="910" y2="200" stroke="#52656D" stroke-width="3" marker-end="url(#arrow)"/>
+
+<rect x="925" y="145" width="220" height="110" rx="18" fill="#ECE8F5" stroke="#87949A" stroke-width="2"/>
+<text x="1035" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1B2430">04</text>
+<text x="1035" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#26343B">Fusion + explicit</text>
+<text x="1035" y="231" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#26343B">missingness</text>
+
+<text x="60" y="318" font-family="Arial, sans-serif" font-size="15" fill="#5B6660">Missing modalities remain missing; an observed zero is preserved as an observed value.</text>
+<text x="60" y="344" font-family="Arial, sans-serif" font-size="15" fill="#5B6660">This baseline aggregates already-derived features and does not process raw audio, video, or eye-tracking media.</text>
 </svg>
