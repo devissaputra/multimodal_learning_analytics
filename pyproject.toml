@@ -5,10 +5,21 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "multimodal-learning-analytics"
 version = "0.1.0"
-description = "Windowed fusion baseline for timestamped speech, gaze, and click signals with explicit missing modality handling."
+description = "Windowed fusion baseline for timestamped speech, gaze, and click features with explicit missing-modality handling."
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [{name = "Devis Wawan Saputra"}]
+readme = "README.md"
+keywords = [
+  "ai-in-education",
+  "aied",
+  "learning-analytics",
+  "multimodal-learning-analytics",
+  "educational-data-mining",
+]
+
+[project.urls]
+Repository = "https://github.com/devissaputra/multimodal_learning_analytics"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
