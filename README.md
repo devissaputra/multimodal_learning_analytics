@@ -16,10 +16,10 @@ Learning-process data can contain several synchronized evidence streams. This re
 
 **Who may find it useful:** Researchers working on multimodal learning analytics, educational data mining, classroom analytics, and learning-process modeling.
 
-## Research questions
+## Questions answered by the current baseline
 
-1. What does cross-modal alignment add beyond single-source analytics?
-2. Which fused features are stable across learners and sessions?
+1. How can derived multimodal features be aligned in fixed windows without mixing learners or sessions?
+2. How can available speech, gaze, and click features be fused transparently within a window?
 3. How can missing modalities be handled without confusing absence with an observed zero?
 
 ## How it works
