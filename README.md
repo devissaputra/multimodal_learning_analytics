@@ -1,14 +1,29 @@
 # Multimodal Learning Analytics
 
+This event-alignment prototype groups multimodal observations by learner, session, and fixed time window before summarizing available speech, gaze, and click fields. Missing modalities remain explicit, and the API prevents accidental mixing of identified learner sessions. The result is a testable data-processing baseline, not an inference engine for attention, emotion, or learning.
+
+## Start here
+
+- [Calculations, evidence and verification scope](CALCULATIONS.md)
+- [Figure sources and exact numerical paths](docs/figure_spec.json)
+- [Data status](data/README.md)
+
+![Study question, data, design and interpretation](assets/review_overview.svg)
+
+![Defined calculation and source-linked evidence](assets/review_calculations.svg)
+
+**Review scope:** 14 existing unittest checks passed. The bundled demonstration executed successfully in this review.
+
+## Detailed project documentation
+
 > Transparent windowed fusion for timestamped speech, gaze, and click features with explicit missing-modality handling.
 
 [![CI](https://github.com/devissaputra/multimodal_learning_analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/multimodal_learning_analytics/actions/workflows/ci.yml)
 
-![Multimodal Learning Analytics workflow](assets/architecture.svg)
 
 **Area:** AI in Education (AIEd) · Multimodal Learning Analytics  
 **Status:** working research prototype  
-**Author:** Devis Wawan Saputra
+**Author:** Devis Saputra
 
 ## What this project is for
 
@@ -28,11 +43,9 @@ The baseline first keeps learners and sessions separate, then places timestamped
 
 An observed click count of zero remains a real observation. A missing click stream is returned as missing rather than being converted to zero.
 
-![Multimodal Learning Analytics data and reasoning flow](assets/data_flow.svg)
 
 The current implementation consumes already-derived numeric features. It does **not** process raw audio, video, or eye-tracking recordings.
 
-![Synthetic demo snapshot for Multimodal Learning Analytics](assets/demo_snapshot.svg)
 
 This snapshot shows the bundled synthetic example. It verifies the software path; it is not an empirical performance result.
 
@@ -77,7 +90,6 @@ A useful next study should compare fused features with unimodal baselines under 
 
 ## Evaluation view
 
-![Multimodal Learning Analytics evaluation dashboard](assets/evaluation_dashboard.svg)
 
 The dashboard is an evaluation checklist rather than a result chart. Its bars are illustrative only and do not report measured performance.
 

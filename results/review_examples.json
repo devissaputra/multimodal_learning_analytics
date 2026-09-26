@@ -1,0 +1,13 @@
+{
+  "kind": "illustrative_calculation",
+  "note": "Two synthetic events; ratios averaged, clicks summed.",
+  "outputs": {
+    "speech": 0.5,
+    "gaze": 0.75,
+    "clicks": 3,
+    "speech_observed": true,
+    "gaze_observed": true,
+    "clicks_observed": true,
+    "modalities": 3
+  }
+}

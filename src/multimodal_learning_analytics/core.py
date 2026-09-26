@@ -1,3 +1,7 @@
+# Calculation reading guide: ../CALCULATIONS.md (repository root).
+# Window index = floor(timestamp/window width); speech/gaze = observed means; clicks = sum.
+# Missing modalities remain None, not zero. Alignment does not establish that speech or gaze measures attention or learning. Clock origin, units and measurement quality must be consistent before fusion.
+
 from collections import defaultdict
 from numbers import Real
 

@@ -1,0 +1,62 @@
+{
+  "question": "How can asynchronous modalities be aligned without mixing learners?",
+  "data": "Synthetic timestamped speech, gaze and click events with learner/session identifiers.",
+  "method": "Bucket by learner, session and time; aggregate observed fields; preserve modality missingness.",
+  "formula": "Window index = floor(timestamp/window width); speech/gaze = observed means; clicks = sum.",
+  "interpretation": "Missing modalities remain None, not zero. Alignment does not establish that speech or gaze measures attention or learning. Clock origin, units and measurement quality must be consistent before fusion.",
+  "status": "SYNTHETIC / RULE-BASED PROTOTYPE | no educational validity claim",
+  "source": "results/review_examples.json",
+  "rows": [
+    {
+      "label": "speech",
+      "path": [
+        "outputs",
+        "speech"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "gaze",
+      "path": [
+        "outputs",
+        "gaze"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "clicks",
+      "path": [
+        "outputs",
+        "clicks"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "speech_observed",
+      "path": [
+        "outputs",
+        "speech_observed"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "gaze_observed",
+      "path": [
+        "outputs",
+        "gaze_observed"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "clicks_observed",
+      "path": [
+        "outputs",
+        "clicks_observed"
+      ],
+      "unit": "unitless"
+    }
+  ],
+  "table_title": "Worked example — illustrative, not a measured research result",
+  "evidence_note": "Illustrative inputs and calculations are in scripts/review_examples.py.",
+  "finding": "This event-alignment prototype groups multimodal observations by learner, session, and fixed time window before summarizing available speech, gaze, and click fields. Missing modalities remain explicit, and the API prevents accidental mixing of identified learner sessions. The result is a testable data-processing baseline, not an inference engine for attention, emotion, or learning."
+}
